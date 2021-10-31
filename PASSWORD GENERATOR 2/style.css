@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rebeccapurple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.pw-container {
+  background-color: rgb(46, 12, 80);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  min-width: 400px;
+}
+
+/*password header*/
+.pw-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  height: 70px;
+  margin-bottom: 2rem;
+}
+
+.pw {
+  background-color: rgb(83, 34, 133);
+  border: none;
+  outline: none;
+  font-family: inherit;
+  width: 100%;
+  pointer-events: none;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  padding: .25rem;
+  margin-right: .5rem;
+}
+
+.copy {
+  background-color: transparent;
+  border:none;
+  color: whitesmoke;
+  font-size: 3.5rem;
+  padding: 0;
+  cursor: pointer;
+}
+
+/*password body*/
+.pw-body {
+  padding: 0 1rem 1rem;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+  font-size: 1rem;
+  margin : .75rem 0;
+}
+
+.generate {
+  background-color: #ecd602;
+  display: block;
+  color: rebeccapurple;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+}

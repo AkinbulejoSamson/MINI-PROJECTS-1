@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-image: url(https://images.unsplash.com/photo-1605941407951-fa62495beb54?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fG5ldyUyMHllYXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: normal;
+  color:aliceblue;
+  margin-top: 28rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  color:aliceblue;
+}
+
+.countdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 2rem;
+}
+
+.big-text {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 1rem 2rem;
+}
+
+.countdown-el {
+  text-align: center;
+  color:aliceblue;
+}
+
+.countdown-el span {
+  font-size: 1.5rem;
+}

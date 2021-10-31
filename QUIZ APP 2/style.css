@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-container {
+  background-color: #fff;
+  width: 500px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 3px rgba(167, 166, 166, 0.3);
+  overflow: hidden;
+}
+
+.quiz-header {
+  padding: 3rem;
+}
+
+h2 {
+  text-align:center;
+
+  padding: 1rem;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  background-color: #F3F3FB;
+  padding: 0.2rem;
+  border-radius: 10px;
+}
+
+ul li:hover {
+  background-color: #fff;
+}
+
+label {
+  cursor: pointer;
+}
+
+input {
+  cursor: pointer;
+}
+
+button {
+  background-color: #4370E7;
+  border-style: none;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  display: block;
+}
+
+button:hover {
+  background-color: #3f66d1;
+}
+
+button:focus {
+  background-color: #314d9c;
+}

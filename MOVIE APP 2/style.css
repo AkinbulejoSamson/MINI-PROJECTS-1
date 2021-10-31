@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #22254b;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+/*header styles*/
+header {
+  background-color: #373B69;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+h2 {
+  color: #9399ee;
+  margin: 0;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid #22254b;
+  font-family: inherit;
+  font-size: 1rem;
+  color: aliceblue;
+  border-radius: 50px;
+  padding: .5rem 1rem;
+}
+
+.search::placeholder {
+  color: #7378c5;
+}
+
+.search:focus {
+  background-color: #22254b;
+  outline: none;
+}
+
+/*movie styles*/
+main {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  background-color: #373B69;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.movie img {
+  max-width: 100%;
+}
+
+.movie-info {
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0.75rem 1rem 1rem;
+  letter-spacing: 1px;
+}
+
+.movie-info h3 {
+  margin: 0;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-info span {
+  background-color: #22254b;
+  font-weight: bolder;
+  border-radius: 3px;
+  padding: .4rem;
+}
+
+.movie-info span.green {
+  color: rgb(6, 219, 6);
+}
+
+.movie-info span.orange {
+  color: rgba(255, 166, 0, 0.726);
+}
+
+.movie-info span.red {
+  color: red;
+}
+
+.overview {
+  background-color: #fff;
+  padding: 1rem;
+  max-height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(101%);
+  transition: transform 0.4s ease-in;
+}
+.overview h3 {
+  margin-top: 0;
+}
+
+.overview h4 {
+  font-size: 1.1rem;
+}
+
+.overview h4, p {
+  margin-top: 1rem;
+  display: inline;
+  vertical-align: auto;
+}
+
+.movie:hover .overview {
+  transform: translateY(0%);
+}
